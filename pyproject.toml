@@ -4,18 +4,27 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "llm_agent_framework_tools"
+name = "llm-agent-scaffolder"
 version = "0.1.0"
 authors = [
   { name="Uday Valera", email="udayvalera@gmail.com" },
 ]
-description = "Scaffolding tools for the LLM Agent Framework."
+description = "A scaffolding tool to quickly generate a boilerplate for a custom LLM Agent Framework."
+readme = "README.md"
+license = { file="LICENSE" }
 requires-python = ">=3.8"
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
+    "Topic :: Software Development :: Code Generators",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
 ]
+keywords = ["llm", "agent", "framework", "scaffolding", "boilerplate", "gemini"]
+
+[project.urls]
+"Homepage" = "https://github.com/udayvalera/llm-agent-scaffolder"
+"Bug Tracker" = "https://github.com/udayvalera/llm-agent-scaffolder/issues"
 
 [project.scripts]
 create-simple-agent = "scaffold:main"
